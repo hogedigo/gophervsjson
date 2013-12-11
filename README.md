@@ -1,4 +1,4 @@
 gophervsjson
 ============
 
-sample code about go json
+sample code about go json.
