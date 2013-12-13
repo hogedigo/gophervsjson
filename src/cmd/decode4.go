@@ -2,7 +2,6 @@ package main
 
 import (
 	"encoding/json"
-	"fmt"
 	"log"
 	"strings"
 )
@@ -46,10 +45,6 @@ func main() {
 			"title": "Go! Gopher",
 			"price": 3000,
 			"authors": "テスト"
-		},
-		{
-			"title": "",
-			"authors": "hoge"
 		}
 	]
 }
@@ -59,5 +54,5 @@ func main() {
 		log.Fatal(err)
 	}
 	
-	fmt.Printf("%s", b)
+	log.Printf("%s", b)
 }

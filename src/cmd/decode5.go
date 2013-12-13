@@ -2,7 +2,6 @@ package main
 
 import (
 	"encoding/json"
-	"fmt"
 	"log"
 )
 
@@ -47,11 +46,11 @@ func main() {
 		log.Fatal(err)
 	}
 	
-	fmt.Printf("%s\n", b)
+	log.Printf("%s\n", b)
 	
 	bookshelf := b.(map[string]interface{})
 	books := bookshelf["books"].([]interface{})
 	book2 := books[2].(map[string]interface{})
 
-	fmt.Printf("%s\n", book2["title"])
+	log.Printf("%s\n", book2["title"])
 }
